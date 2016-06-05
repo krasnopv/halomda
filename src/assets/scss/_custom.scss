@@ -6,16 +6,20 @@ header {
 				position: absolute;
 				top: 0;
 				left: 0;
-				padding: 0.25rem 1.25rem 0 0.5rem;
+				padding: 0.25rem 0 0 0.5rem;
+				width: 5.75rem;
 			}
 		.menu > li > a {
 			color: $white;
 			font-weight: bold;
 			font-size: 0.875rem;
+			padding-left: 2.875rem;
+			padding-right: 0;
 		}
 	}
 	.header-main {
 		background: $light-blue;
+		height: 9.6875rem;
 		.header-title {
 			padding: 1.5rem 0 2.375rem 7rem;
 			h5 {
@@ -30,5 +34,71 @@ header {
 	.header-menu {
 		position: absolute;
 		margin-top: -2rem;
+		width: $global-width;
+		background: $white;
+		height: 4.3125rem;
+		z-index: 2;
+		display: flex;
+		.menu {
+			height: 100%;
+			padding: 0.96875rem 0;
+			padding-right: 0.5rem;
+			font-size: 0.875rem;
+			font-weight: bold;
+			.menu-label {
+				color: $dark-blue;
+			}
+			li {
+				padding-left: 0.5rem;
+				min-width: 2.875rem;
+				&.menu-blue {
+					min-width: 4.6rem;
+					a {
+						background-color: $blue;					
+						padding-left: 1rem !important;
+						padding-right: 1rem !important;
+					}
+				}
+				&.menu-dark-blue {
+					a {
+						background-color: $dark-blue;
+						padding-left: 0.5rem !important;
+						padding-right: 0.5rem !important;				
+					}
+				}
+				> a {
+					background-color: #fdb813;
+					padding: 0 0.4375rem !important;
+					line-height: 2.375rem;
+					color: $white;
+					text-align: center;
+					border-radius: 0.125rem;
+					&::after {
+						display: none !important;
+					}
+				}
+			}
+		}
+	}
+}
+.orbit {
+	background: url(../img/slider-bg.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+	height: 34.75rem;
+	max-width: 100rem;
+	margin: 0 auto;
+	.orbit-container {
+	position: absolute !important;
+	top: 8.05rem !important;
+	left: 7.95rem;
+		.orbit-slide {
+		    width: 570px;
+		    height: 330px;
+			img {
+				width: 576px;
+				height: 332px;
+			}
+		}
 	}
 }
