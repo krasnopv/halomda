@@ -90,15 +90,19 @@ header {
 	max-width: 100rem;
 	margin: 0 auto;
 	.orbit-container {
-	position: absolute !important;
+	/*position: absolute !important;
 	top: 8.05rem !important;
-	left: 7.95rem;
+	left: 7.95rem;*/
+	height: 100% !important;
 		.orbit-slide {
-		    width: 570px;
+		    position: absolute !important;
+			top: 8.05rem !important;
+			left: 7.95rem;
+			width: 570px;
 		    height: 330px;
 			img {
 				width: 576px;
-				height: 332px;
+				height: 328px;
 			}
 		}
 	}
