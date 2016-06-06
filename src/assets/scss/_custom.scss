@@ -123,11 +123,13 @@ header {
 }
 .sticky-container {
 	left: 0;
+	max-width: 100rem !important;
 	.sticky {
 		position: absolute;
 		left: 0;
 		border: 6px solid $border-blue;
 		text-align: center;
+		background-color: $white;
 		.sticky-bottom {
 			background-color: $light-gray;
 			border-bottom: 1px solid $white;
