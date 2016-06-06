@@ -42,15 +42,15 @@ header {
 		display: flex;
 		.menu {
 			height: 100%;
-			padding: 0.96875rem 0;
-			padding-right: 0.5rem;
+			padding: 1rem 0;
+			padding-right: 0.625rem;
 			font-size: 0.875rem;
 			font-weight: bold;
 			.menu-label {
 				color: $dark-blue;
 			}
 			li {
-				padding-left: 0.5rem;
+				padding-left: 0.625rem;
 				min-width: 2.875rem;
 				&.menu-blue {
 					min-width: 4.6rem;
@@ -74,6 +74,19 @@ header {
 					color: $white;
 					text-align: center;
 					border-radius: 0.125rem;
+					&.double {
+					    line-height: 1rem !important;
+					    padding-top: 0.2rem !important;
+					    padding-bottom: 0.2rem !important;
+					}
+					&.double-icn {
+					    line-height: 0.88rem !important;
+					    padding-top: 0.2rem !important;
+					    padding-bottom: 0.2rem !important;
+					    img {
+					    	margin: 0;
+					    }
+					}
 					&::after {
 						display: none !important;
 					}
@@ -97,13 +110,37 @@ header {
 		.orbit-slide {
 		    position: absolute !important;
 			top: 8.05rem !important;
-			left: 7.95rem;
+			right: 48.5%;
+			//left: 9.42%;//7.95rem;
 			width: 570px;
 		    height: 330px;
 			img {
 				width: 576px;
 				height: 328px;
 			}
+		}
+	}
+}
+.sticky-container {
+	left: 0;
+	.sticky {
+		position: absolute;
+		left: 0;
+		border: 6px solid $border-blue;
+		text-align: center;
+		.sticky-bottom {
+			background-color: $light-gray;
+			border-bottom: 1px solid $white;
+			padding: 1.5rem 0;
+			margin: 0;
+		}
+		&.is-anchored {
+		    //position: absolute;
+		    left: 0;
+		    //right: auto;
+		}
+		&.is-stuck {
+			margin-top: 10% !important;
 		}
 	}
 }
