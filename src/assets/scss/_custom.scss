@@ -208,13 +208,41 @@ header {
     	}
 		#carousel {
 			&.autoplay {
-				height: 30.3125rem;
 				margin: 0 auto;
 				background-size: auto 100%;
 				.slide-body {
 					padding: 0.8125rem !important;
 					margin: 0 0.625rem;
 					background-color: $white;
+					.slide-overlay {
+						display: none;
+						position: absolute;
+						height: 100%;
+						width: 180px;
+						margin: -0.8125rem -0.8125rem 0 0;
+						cursor: pointer;
+						background-color: rgba(0,0,0,0.6);
+						button {
+							position: absolute;
+							width: 6.5rem;
+							border-width: 2px;
+							border-radius: 	0.25rem; 
+							padding: 0.90625rem 0.9rem;
+							top: 50%;
+							right: 50%;
+							margin-right: -3.25rem;
+							margin-top: -1.46875rem;
+							&:hover {
+								color: lighten($warning-color, 14%);
+								border-color: lighten($warning-color, 14%);
+							}
+						}
+					}
+					&:hover {
+						.slide-overlay {
+							display: block;
+						}
+					}
 					.slide-img {
 						width: 155px;
 						height: 206px;
