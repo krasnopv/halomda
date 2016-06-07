@@ -21,14 +21,21 @@ header {
 		background: $light-blue;
 		height: 9.6875rem;
 		.header-title {
+			position: relative;
 			padding: 1.5rem 0 2.375rem 7rem;
 			text-align: left;
 			h5 {
 				color: $dark-blue;
 				margin-bottom: 0;
+				line-height: 2.25rem;
 			}
 			h6 {
 				color: $blue;
+			}
+			.caption-img {
+				position: absolute;
+				top: 0.5rem;
+				right: 51.8%;
 			}
 		}
 	}
@@ -73,7 +80,7 @@ header {
 					line-height: 2.375rem;
 					color: $white;
 					text-align: center;
-					border-radius: 0.125rem;
+					border-radius: 0.2rem;
 					&.double {
 					    line-height: 1rem !important;
 					    padding-top: 0.2rem !important;
@@ -124,6 +131,7 @@ header {
 .sticky-container {
 	left: 0;
 	max-width: 100rem !important;
+	height: 0 !important;
 	.sticky {
 		position: absolute;
 		left: 0;
@@ -137,9 +145,8 @@ header {
 			margin: 0;
 		}
 		&.is-anchored {
-		    //position: absolute;
 		    left: 0;
-		    //right: auto;
+		    z-index: 10;
 		}
 		&.is-stuck {
 			margin-top: 10% !important;
@@ -147,10 +154,69 @@ header {
 	}
 }
 
-.autoplay {
-	max-width: 100rem;
-	height: 30.3125rem;
-	margin: 0 auto;
+#video {
+	padding: 4rem 0 5.875rem;
+	#video_player { 
+	  display: table; 
+	  line-height: 0;
+	  font-size: 0; 
+	  background: #000;
+	  max-width: 1200px;
+	  margin: 0 auto;
+	}
+	#video_container { 
+	  position: relative;
+	}
+	#video_player div, #video_player figcaption { 
+	  display: table-cell;
+	  vertical-align: top; 
+	}
+	#video_container video { 
+	  position: absolute; 
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	}
+	#video_player figcaption { width: 25%; }
+	#video_player figcaption a { display: block; }
+	#video_player figcaption a { 
+	  opacity: .5;
+	  transition: 1s opacity; 
+	}
+	#video_player figcaption a img, figure video { 
+	  width: 100%; height: auto; 
+	}
+	#video_player figcaption a.currentvid, #video_player figcaption a:hover, #video_player figcaption a:focus { opacity: 1; }
+	/*@media (max-width: 700px) {
+	  #video_player video, #video_player figcaption { 
+	    display: table-row; 
+	  }
+	#video_container { padding-top: 56.25%; }
+	#video_player figcaption a { 
+	  display: inline-block; width: 33.33%; 
+	}
+	}*/
+}
+#gallery {
 	background: url("../img/gallery-bg.jpg") no-repeat;
-	background-size: auto 100%;
+	max-width: 100rem;
+    margin: 0 auto;
+    padding: 2.5rem 0 4.3rem;
+	#carousel {
+		.autoplay {
+			height: 30.3125rem;
+			margin: 0 auto;
+			background-size: auto 100%;
+		}
+	}
+}
+
+.section-title {
+	font-size: 2.25rem;
+	color: $dark-blue;
+	margin-bottom: 1.75rem;
+	&.alt {
+		color: $white;
+	}
 }
