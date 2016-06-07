@@ -151,6 +151,22 @@ header {
 		&.is-stuck {
 			margin-top: 10% !important;
 		}
+		&.to-top {
+			//position: fixed;
+			left: 94% !important;
+    		margin-top: 35% !important;
+			border: none;
+			background-color: transparent;
+			&.is-anchored {
+    			margin-top: 35% !important;
+    		}
+    		&.is-stuck {
+    			margin-top: 35% !important;
+			}
+			a {
+				float: right;
+			}
+		}
 	}
 }
 
