@@ -64,14 +64,16 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 34px;
+    width: 34px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
+    top: 0;
+    margin-top: -3.5rem;
+    right: auto;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -101,10 +103,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 0rem;
     [dir="rtl"] & {
-        left: auto;
-        right: -25px;
+        left: 2.5rem;
     }
     &:before {
         content: url(../img/btn_gallery_left.png);
@@ -115,10 +116,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    left: 2.5rem;
     [dir="rtl"] & {
-        left: -25px;
-        right: auto;
+        left: 0rem;
     }
     &:before {
         content: url(../img/btn_gallery_right.png);
@@ -132,6 +132,11 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dotted.slick-slider {
     margin-bottom: 30px;
+}
+
+.slick-slide {
+    max-width: 183px !important;
+    height: 310px;
 }
 
 .slick-dots {

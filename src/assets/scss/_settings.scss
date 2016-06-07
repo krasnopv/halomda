@@ -59,6 +59,7 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
+$text-dark: #3d3d3d;
 $black: #0a0a0a;
 $white: #ffffff;
 $dark-blue: #003d5c;
@@ -66,7 +67,7 @@ $blue: #0484ab;
 $light-blue: #dceff5;
 $border-blue: #59c2fc;
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: $text-dark;
 $body-font-family: 'Open Sans Hebrew', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
