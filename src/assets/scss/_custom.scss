@@ -138,11 +138,35 @@ header {
 		border: 6px solid $border-blue;
 		text-align: center;
 		background-color: $white;
+		&.sticky-left {
+			box-shadow: 3px 3px 7px black;
+		}
+		p {
+			color: $dark-blue;
+		}
+		.sticky-top {
+			padding: 1.125rem;
+			button {
+				font-size: 1rem;
+				font-weight: bold;
+				padding: 0 1rem;
+				border-radius: 0.25rem;
+			}
+		}
 		.sticky-bottom {
 			background-color: $light-gray;
 			border-bottom: 1px solid $white;
 			padding: 1.5rem 0;
 			margin: 0;
+			p {
+				font-weight: bold;
+				color: $dark-blue;
+				margin-bottom: 0;
+			}
+			a {
+				text-decoration: underline;
+				color: $blue;
+			}
 		}
 		&.is-anchored {
 		    left: 0;
