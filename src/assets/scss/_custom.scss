@@ -334,6 +334,55 @@ header {
 	}
 }
 
+footer {
+	.footer-inner {
+		padding: 2.5rem 0 1rem;
+		.footer-left {
+			display: flex;
+			padding-top: 11.2px;
+			padding-left: 0;
+			margin-left: -2rem;
+			.fb-logo {
+				img {
+					padding-right: 1rem;
+				}
+			}
+			.fb-caption {
+				text-align: left;
+				h5 {
+					font-size: 0.875rem !important;
+					color: $blue  !important;
+					font-weight: bold;
+					margin-bottom: 0;
+				}
+				p {
+					font-size: 0.75rem;
+					margin-bottom: 0;
+				}
+				img {
+
+				}
+			}
+		}
+		.footer-right {
+			text-align: center;
+			margin-left: 2rem;
+			.menu {
+				text-align: center;
+				margin-bottom: 1.3rem;
+			}
+		}
+	}
+	.socket {
+		padding: 1.125rem 0;
+		border-top: 2px solid $light-gray;
+		text-align: center;
+	}
+	.socket2 {
+		height: 1rem;
+		background-color: $blue;
+	}
+}
 .section-title {
 	font-size: 2.25rem;
 	color: $dark-blue;
