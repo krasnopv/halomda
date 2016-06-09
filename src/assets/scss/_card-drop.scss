@@ -1,0 +1,126 @@
+.card-drop {
+  ul {
+    li {
+      //max-width: 300px;
+      position: relative;
+      margin: 0 auto;
+      -webkit-perspective: 800px;
+      -moz-perspective: 800px;
+      -ms-perspective: 800px;
+      -o-perspective: 800px;
+      perspective: 800px;
+      a {
+        display: block;
+        width: 100%;
+        //background-color: salmon;
+        padding: 20px 0 20px 20px;
+        height: 60px;
+        text-decoration: none;
+        //color: #fff;
+        //background-color: #5f8181;
+        border-bottom: 1px solid #4e6a6a;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        i {
+          display: inline-block;
+          width: 20px;
+        }
+      }
+      > a {
+        &.toggle {
+          position: relative;
+          z-index: 300;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden;
+          -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          -ms-transform-style: preserve-3d;
+          -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+          -webkit-transform-origin: 50% 0%;
+          -moz-transform-origin: 50% 0%;
+          -ms-transform-origin: 50% 0%;
+          -o-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+          -webkit-transition: 0.1s linear;
+          -moz-transition: 0.1s linear;
+          -o-transition: 0.1s linear;
+          transition: 0.1s linear;
+          //background-color: #729797;
+          &:active {
+            -webkit-transform: rotateX(60deg);
+            -moz-transform: rotateX(60deg);
+            -ms-transform: rotateX(60deg);
+            -o-transform: rotateX(60deg);
+            transform: rotateX(60deg);
+          }
+          &.active {
+            &:before { 
+              content: "\f0d8"; 
+            }
+          }
+          /*&:before {
+            border-left: 1px solid #4E6A6A;
+            color: #344646;
+            content: "";
+            display: block;
+            font-family: 'FontAwesome';
+            font-size: 1.3em;
+            height: 59px;
+            line-height: 60px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+            top: 0;
+            width: 60px;
+          }*/
+        }
+      }
+      ul {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        display: block;
+        width: 100%;
+        li {
+          margin: 0 auto;
+          -webkit-transition: all, 0.3s ease-out;
+          -moz-transition: all, 0.3s ease-out;
+          -o-transition: all, 0.3s ease-out;
+          transition: all, 0.3s ease-out;
+          position: absolute;
+          top: 0;
+          z-index: 0;
+          width: 100%;
+          a {
+            &:hover {
+              //background-color: #6a9090;
+              //color: #dce5e5;
+            }
+          }
+          &.active {
+            a {
+              //color: #95b1b1;
+              //background-color: #547272;
+              cursor: default;
+            }
+          }
+          &.closed {
+            a {
+              &:hover {
+                cursor: default;
+                //background-color: #5f8181;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

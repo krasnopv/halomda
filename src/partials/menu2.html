@@ -1,0 +1,123 @@
+	<div class="header-menu">
+		<div class="card-drop"> 
+		    <ul class="dropdown menu" data-dropdown-menu>
+			    <li class=".is-dropdown-submenu-parent">
+				    <a class='toggle' href="#"> 
+				      	<i class='fa fabars'></i> 
+				      	<span class='label-active'>Skills</span> 
+				    </a>
+				    <ul>
+				      	<li class='active'> <a data-label="Skills" href="#"><i class='fa fabars'></i> Skills</a> </li>
+				      	<li> <a data-label="Html5" href="#"><i class='fa fa-html5'></i> HTML5</a> </li>
+				      	<li > <a data-label="CSS3" href="#"><i class='fa fa-css3'></i> CSS3</a> </li>
+				      	<li> <a data-label="Linux" href="#"><i class='fa fa-linux'></i> Linux</a> </li>
+				      	<li> <a data-label="Wordpress" href="#"><i class='fa fa-wordpress'></i> Wordpress</a> </li>
+				      	<li> <a data-label="Git" href="#"><i class='fa fa-git'></i> Git</a> </li>
+				    </ul>
+				</li>
+				<li class=".is-dropdown-submenu-parent">
+				    <a class='toggle' href="#"> 
+				      	<i class='fa fabars'></i> 
+				      	<span class='label-active'>Skills</span> 
+				    </a>
+				    <ul>
+				      	<li class='active'> <a data-label="Skills" href="#"><i class='fa fabars'></i> Skills</a> </li>
+				      	<li> <a data-label="Html5" href="#"><i class='fa fa-html5'></i> HTML5</a> </li>
+				      	<li > <a data-label="CSS3" href="#"><i class='fa fa-css3'></i> CSS3</a> </li>
+				      	<li> <a data-label="Linux" href="#"><i class='fa fa-linux'></i> Linux</a> </li>
+				      	<li> <a data-label="Wordpress" href="#"><i class='fa fa-wordpress'></i> Wordpress</a> </li>
+				      	<li> <a data-label="Git" href="#"><i class='fa fa-git'></i> Git</a> </li>
+				    </ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+<script>
+
+$(document).ready(function(){
+  (function($){
+  //Author: Brady Sammons
+  //URL: www.bradysammons.com
+	/* -------------------------------------------------------- */ 
+	/*	//set Global variables
+	/* -------------------------------------------------------- */ 
+	var cards = $(".card-drop"),
+		toggler = cards.find(".toggle"),
+		links = cards.find("ul>li>a"),
+		li = links.parent('li'),
+		count = links.length,
+		width = links.outerWidth();
+
+console.info(count);
+
+console.info(width);
+console.info(toggler);
+console.info(links);
+console.info(li);
+console.info(cards );
+
+		//set z-Index of drop Items
+		links.parent("li").each(function(i){
+			$(this).css("z-index" , count - i); //invert the index values
+		});
+
+		//set top margins & widths of li elements
+		function setClosed(){
+			li.each(function(index){
+				 $(this).css("top" , index *2)
+                                              
+				 		.css("width" , width - index *20)
+				 		.css("margin-left" , (index*20)/2)
+                        .css("margin-left" , (index*20)/2);
+			});
+                       
+			li.addClass('closed');
+			toggler.removeClass("active");
+		}
+		setClosed();
+
+	/* -------------------------------------------------------- */ 
+	/*	Toggler Click handler
+	/* -------------------------------------------------------- */ 
+	toggler.on("mousedown" , function(){
+		var $this = $(this); //cache $(this)
+		//if the menu is active:
+               console.info(this);
+		if($this.is(".active")){
+			setClosed();
+		}else{
+			//if the menu is un-active:
+			$this.addClass("active");
+			li.removeClass('closed');
+			//set top margins
+			li.each(function(index){
+				 $(this).css("top" , 60 * (index + 1))
+				 		.css("width" ,"70%")
+				 		.css("margin-left" , "40px");
+			});
+		}
+	});
+
+	/* -------------------------------------------------------- */ 
+	/*	Links Click handler
+	/* -------------------------------------------------------- */ 
+	links.on("click" , function(e){
+		var $this = $(this),
+			label = $this.data("label");
+			icon = $this.children("i").attr("class");
+			
+			li.removeClass('active');
+		if($this.parent("li").is("active")){
+			$this.parent('li').removeClass("active");
+		}else{
+			$this.parent("li").addClass("active");
+		}
+		toggler.children("span").text(label);
+		toggler.children("i").removeClass().addClass(icon);
+		setClosed();
+		e.preventDefault;
+	});
+
+})(jQuery);
+}); 
+</script>
