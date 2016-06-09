@@ -340,7 +340,7 @@ DropdownMenu.defaults = {
    * @option
    * @example false
    */
-  disableHover: false,
+  disableHover: true,
   /**
    * Allow a submenu to automatically close on a mouseleave event, if not clicked open.
    * @option
@@ -358,7 +358,7 @@ DropdownMenu.defaults = {
    * @option
    * @example true
    */
-  clickOpen: false,
+  clickOpen: true,
   /**
    * Amount of time to delay closing a submenu on a mouseleave event.
    * @option
