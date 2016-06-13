@@ -275,9 +275,9 @@ class Sticky {
       this._parsePoints();
     }
 
-    this.$element.css({
+    /*this.$element.css({
       'max-width': `${newElemWidth - pdng}px`
-    });
+    });*/
 
     var newContainerHeight = this.$element[0].getBoundingClientRect().height || this.containerHeight;
     if (this.$element.css("display") == "none") {
