@@ -69,6 +69,7 @@ header {
 					z-index: 10;
 					&.is-dropdown-submenu-item {
 						width: 126px;
+						min-width: 106px;
 						padding: 1.5rem 0.5rem;
 						&:nth-child(n+2) {
 							-webkit-animation-name: card-left2; /* Chrome, Safari, Opera */
@@ -79,9 +80,6 @@ header {
 							animation-fill-mode: forwards;
 						}
 						a {
-							img {
-								width: 106px;
-							}
 							&:hover {
 								background: transparent !important;
 								/*img {
