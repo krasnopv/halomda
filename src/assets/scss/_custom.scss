@@ -84,14 +84,14 @@ header {
 							}
 							&:hover {
 								background: transparent !important;
-								img {
-									-webkit-animation-name: card-size; /* Chrome, Safari, Opera */
-						    		-webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+								/*img {
+									-webkit-animation-name: card-size; /* Chrome, Safari, Opera *
+						    		-webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera *
 						    		-webkit-animation-fill-mode: forwards;
 						    		animation-name: card-size;
 						    		animation-duration: 0.5s;
 									animation-fill-mode: forwards;
-								}
+								}*/
 							}
 						}
 					}
