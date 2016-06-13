@@ -54,6 +54,7 @@ header {
 			font-weight: bold;
 			.menu-label {
 				color: $dark-blue;
+				padding-bottom: 8px;
 			}
 			.is-dropdown-submenu {
 			    background: $light-gray;
@@ -67,8 +68,8 @@ header {
 				> li {
 					z-index: 10;
 					&.is-dropdown-submenu-item {
-						width: 146px;
-						padding: 1.5rem 1.125rem;
+						width: 126px;
+						padding: 1.5rem 0.5rem;
 						&:nth-child(n+2) {
 							-webkit-animation-name: card-left2; /* Chrome, Safari, Opera */
 						    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
@@ -78,6 +79,9 @@ header {
 							animation-fill-mode: forwards;
 						}
 						a {
+							img {
+								width: 106px;
+							}
 							&:hover {
 								background: transparent !important;
 								img {
@@ -188,17 +192,14 @@ header {
 	}
 }
 .orbit {
-	/*background: url(../img/slider-bg.png) no-repeat;
-    background-size: 100% auto ;
-    background-position: center;*/
 	height: 34.75rem;
 	max-width: 120rem;
 	margin: 0 auto;
 	.orbit-container {
-	/*position: absolute !important;
-	top: 8.05rem !important;
-	left: 7.95rem;*/
-	height: 100% !important;
+		/*position: absolute !important;
+		top: 8.05rem !important;
+		left: 7.95rem;*/
+		height: 100% !important;
 		.orbit-previous, .orbit-next {
 			z-index: 1;
 		}
@@ -207,11 +208,36 @@ header {
 			top: 8.05rem !important;
 			right: 48.5%;
 			//left: 9.42%;//7.95rem;
-			width: 570px;
-		    height: 330px;*/
+			width: 570px;*/
+		    height: 35rem;
+		    &.slide1 {
+		    	background: url(../img/slider-bg.png) no-repeat;
+    			background-size: 100% auto ;
+    			background-position: center;
+    		}
 			img {
 				width: 100%;
 				height: auto;
+			}
+			.single-item-rtl {
+				top: 8.05rem !important;
+				right: 48.5%;
+			    width: 570px;
+			    position: absolute;
+				.slick-list {
+					.slick-track {
+						.slick-slide {
+							/*position: absolute !important;
+							top: 8.05rem !important;
+							right: 48.5%;
+							//left: 9.42%;//7.95rem;*/
+							/*img {
+								width: 570px;
+						    	height: 330px;
+						    }*/
+						}
+					}
+				}
 			}
 		}
 	}
@@ -534,4 +560,4 @@ h6 {
 @keyframes card-size2 {
 	0% {zoom: 1.5;}
 	100% {zoom: 1;}
-}
+}	
