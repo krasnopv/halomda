@@ -253,7 +253,7 @@ class DropdownMenu {
         .parent('li.is-dropdown-submenu-parent').addClass('is-active')
         .attr({'aria-expanded': true});
     var clear = Foundation.Box.ImNotTouchingYou($sub, null, true);
-    /*if (!clear) {
+    if (!clear) {
       var oldClass = this.options.alignment === 'left' ? '-right' : '-left',
           $parentLi = $sub.parent('.is-dropdown-submenu-parent');
       $parentLi.removeClass(`opens${oldClass}`).addClass(`opens-${this.options.alignment}`);
@@ -262,7 +262,7 @@ class DropdownMenu {
         $parentLi.removeClass(`opens-${this.options.alignment}`).addClass('opens-inner');
       }
       this.changed = true;
-    }*/
+    }
     $sub.css('visibility', '');
     if (this.options.closeOnClick) { this._addBodyHandler(); }
     /**
