@@ -190,7 +190,7 @@ header {
 	}
 }
 .orbit {
-	height: 34.75rem;
+	height: 35rem;
 	max-width: 120rem;
 	margin: 0 auto;
 	.orbit-container {
@@ -198,6 +198,7 @@ header {
 		top: 8.05rem !important;
 		left: 7.95rem;*/
 		height: 100% !important;
+		background-color: $light-blue;
 		.orbit-previous, .orbit-next {
 			z-index: 1;
 		}
@@ -210,7 +211,7 @@ header {
 		    height: 35rem;
 		    &.slide1 {
 		    	background: url(../img/slider-bg.png) no-repeat;
-    			background-size: 100% auto ;
+    			background-size: auto 35rem ;
     			background-position: center;
     		}
 			img {
@@ -218,9 +219,13 @@ header {
 				height: auto;
 			}
 			.single-item-rtl {
-				top: 8.05rem !important;
-				right: 48.5%;
-			    width: 570px;
+				@media (min-width: 2560px) {
+				    right: 48.7%;
+				}
+				top: 8.15rem !important;
+			    right: 48.2%;
+			    width: 580px;
+			    height: 330px;
 			    position: absolute;
 				.slick-list {
 					.slick-track {
@@ -233,6 +238,7 @@ header {
 								width: 570px;
 						    	height: 330px;
 						    }*/
+						    height: 330px;
 						}
 					}
 				}
