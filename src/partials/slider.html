@@ -17,17 +17,57 @@
       </div>
     </li>
     <li class="is-active orbit-slide slide2">
-      <!--img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""-->
+      <div class="single-item-rtl2">
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+      </div>
     </li>
     <li class="orbit-slide slide3">
-      <!--img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""-->
+      <div class="single-item-rtl3">
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+      </div>
     </li>
-    <li class="orbit-slide slide4">
-      <!--img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""-->
+    <!--li class="orbit-slide slide4">
+      <div class="single-item-rtl">
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+      </div>
     </li>
     <li class="orbit-slide slide5">
-      <!--img class="orbit-image" src="assets/img/orbit/domino-2.jpg" alt=""-->
-    </li>
+      <div class="single-item-rtl">
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/cube1.jpg" alt=""></div>
+        <div><img class="orbit-image" src="assets/img/orbit/domino-1.jpg" alt=""></div>
+      </div>
+    </li-->
   </ul>
   <!--nav class="orbit-bullets">
     <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
@@ -42,7 +82,37 @@
     $('.single-item-rtl').slick({
       rtl: true,
       autoplay: true,
-      arrows: false
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.single-item-rtl2').slick({
+      rtl: true,
+      autoplay: true,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.single-item-rtl3').slick({
+      rtl: true,
+      autoplay: true,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
     });
   });
 </script>
