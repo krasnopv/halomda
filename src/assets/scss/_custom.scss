@@ -202,6 +202,13 @@ header {
 		.orbit-previous, .orbit-next {
 			z-index: 1;
 		}
+		li {
+			&:nth-child(n) {
+			    background: url(../img/slider-bg.png) no-repeat;
+	    		background-size: auto 35rem ;
+	    		background-position: center;
+	    	}
+    	}
 		.orbit-slide {
 		    /*position: absolute !important;
 			top: 8.05rem !important;
@@ -209,11 +216,6 @@ header {
 			//left: 9.42%;//7.95rem;
 			width: 570px;*/
 		    height: 35rem;
-		    &.slide1 {
-		    	background: url(../img/slider-bg.png) no-repeat;
-    			background-size: auto 35rem ;
-    			background-position: center;
-    		}
 			img {
 				width: 100%;
 				height: auto;
