@@ -203,8 +203,13 @@ header {
 			z-index: 1;
 		}
 		li {
-			&:nth-child(n) {
-			    background: url(../img/slider-bg.png) no-repeat;
+			&.slide1 {
+			    background: url(../img/slide1.jpg) no-repeat;
+	    		background-size: auto 35rem ;
+	    		background-position: center;
+	    	}
+	    	&.slide2 {
+			    background: url(../img/slide2.jpg) no-repeat;
 	    		background-size: auto 35rem ;
 	    		background-position: center;
 	    	}
@@ -224,7 +229,7 @@ header {
 				@media (min-width: 2560px) {
 				    right: 48.7%;
 				}
-				top: 8.15rem !important;
+				top: 8.3rem !important;
 			    right: 48.2%;
 			    width: 580px;
 			    height: 330px;
@@ -240,7 +245,7 @@ header {
 								width: 570px;
 						    	height: 330px;
 						    }*/
-						    height: 330px;
+						    height: 328px;
 						    width: auto;
 						    img {
 						    	height: 330px;
@@ -256,7 +261,8 @@ header {
 				    right: 48.7%;
 				}
 				top: 8.15rem !important;
-			    right: 48.2%;
+			    right: 50%;
+			    margin-right: -290px;
 			    width: 580px;
 			    height: 330px;
 			    position: absolute;

@@ -7,15 +7,16 @@
 			<div class="video_list">
 				<div class="list_container">
 					<figcaption>
-					  	<a href="http://demosthenes.info/assets/videos/glacier.mp4" class="currentvid">
+					  	<a href="http://localhost:8000/assets/img/video/Nusha-1.mp4" class="currentvid">
 					    	<div class="item_img">
-					    		<img src="http://demosthenes.info/assets/images/vid-glacier.jpg" alt="Athabasca Glacier">
+					    		<img src="assets/img/video/Nusha-1.png" alt="Nusha-1">
 					    	</div>
 					    	<div class="item_caption">
 								<h6>מתמטיקה ופיזיקה</h6>
 			        			<p>לסטודנטים, למורים ללימוד עצמי</p>
 		        			</div>
 					  	</a>
+					  	<!--
 					  	<a href="http://demosthenes.info/assets/videos/lake.mp4">
 					    	<div class="item_img">
 					    		<img src="http://demosthenes.info/assets/images/vid-lake.jpg" alt="Athabasca Lake">
@@ -115,6 +116,7 @@
 			        			<p>לסטודנטים, למורים ללימוד עצמי</p>
 		        			</div>
 					  	</a>
+					  	-->
 					</figcaption>
 				</div>
 			</div>
@@ -133,7 +135,7 @@
 		video_links = video_player.getElementsByTagName("figcaption")[0],
 		source = video.getElementsByTagName("source"),
 		link_list = [],
-		vidDir = "http://demosthenes.info/assets/videos/",
+		vidDir = "assets/img/video/",
 		currentVid = 0,
 		allLnks = video_links.children,
 		lnkNum = allLnks.length;
