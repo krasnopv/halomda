@@ -213,6 +213,24 @@ header {
 		}
 	}
 }
+.top-title {
+	background-color: $blue-bg;
+	padding-top: 50px;
+	h1 {
+		color: $white;
+		font-size: 2.25rem;
+		font-weight: bold;
+	}
+}
+.context {
+	padding-top: 2.5rem;
+	h3 {
+		font-size: 1.5rem;
+		p {
+			font-size: 1rem;
+		}
+	}
+}
 .orbit {
 	height: 35rem;
 	max-width: 120rem;
