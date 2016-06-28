@@ -49,7 +49,7 @@ header {
 		display: flex;
 		.menu {
 			height: 100%;
-			padding: 0.5rem 0.625rem 0;
+			padding: 0.5rem 0.25rem 0;
 			font-size: 0.875rem;
 			font-weight: bold;
 			.menu-label {
@@ -59,7 +59,7 @@ header {
 			.is-dropdown-submenu {
 			    background: $light-gray;
 			    border: none;
-			    height: 202px;
+			    height: 155px;
 			    width: auto;
 			    &.js-dropdown-active {
 					display: flex;
@@ -70,7 +70,7 @@ header {
 					&.is-dropdown-submenu-item {
 						width: 126px;
 						min-width: 106px;
-						padding: 1.5rem 0.5rem;
+						padding: 0 0rem 0.5rem;
 						&:nth-child(n+2) {
 							-webkit-animation-name: card-left2; /* Chrome, Safari, Opera */
 						    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
@@ -80,6 +80,30 @@ header {
 							animation-fill-mode: forwards;
 						}
 						a {
+							img {
+								-moz-transform: scale(0.8);
+								-webkit-transform: scale(0.8);
+								transform: scale(0.8);
+								-ms-transform: scale(0.8,0.8);
+								/*height: 136px;
+								width: auto;*/
+								margin: 0;
+								-moz-transition: all 0.3s;
+								-webkit-transition: all 0.3s;
+								transition: all 0.3s;
+							  	/*-webkit-animation-name: card-size2; /* Chrome, Safari, Opera *
+							    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera *
+							    -webkit-animation-fill-mode: forwards;
+							    animation-name: card-size2;
+							    animation-duration: 0.5s;
+								animation-fill-mode: forwards;*/
+								&:hover {
+									-moz-transform: scale(1);
+									-webkit-transform: scale(1);
+									transform: scale(1);
+									-ms-transform: scale(1,1);
+								}
+							}
 							&:hover {
 								background: transparent !important;
 								/*img {
@@ -132,7 +156,7 @@ header {
 					}
 				}
 				&.menu-blue {
-					min-width: 4.6rem;
+					//min-width: 4.6rem;
 					.sub-item {
 						a {
 							background: transparent;
