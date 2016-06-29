@@ -4,18 +4,6 @@
 		margin-top: 2rem;
 		margin-bottom: 0;		
 	}
-	.pink-text {
-		color: $pink-text;
-		font-weight: bold;	
-	}
-	.blue-text {
-		color: $blue-text;
-		font-weight: bold;	
-	}
-	.red-text {
-		color: $red-text;
-		font-weight: bold;	
-	}
 }
 .tabs {
 	border: none !important;
@@ -52,6 +40,7 @@
 }
 .tabs-content {
 	border-top: 2px solid $blue !important;
+	border-bottom: none !important;
 	margin-top: -3px;
 	font-size: 18px;
 	.tabs-panel {
@@ -70,6 +59,7 @@
 	.tabs-hours {
 		color: $blue-bg;
 		font-weight: bold;
+		margin-bottom: 0 !important;
 		img {
 			margin-top: -3px;
 		}
@@ -82,7 +72,7 @@
 			//padding-top: 2.25rem;
 		}
 	}
-	#tabs-container7 {
+	#tabs-container17 {
 	    background: url('../img/products-1-7.png') no-repeat;
 	    background-position: center left;
 	    min-height: 24.5rem;
@@ -98,7 +88,41 @@
 		background: $white;		
 		//min-height: 384px;
 	}
-	#panel1 {
+	#panel1, #panel2, #panel3 {
 		margin-top: 1.25rem;
 	}
+	.tabs-banner {
+		background: $blue-bg;
+		font-size: 2.25rem;
+		color: $white;
+		text-align: center;
+		padding: 2rem 0;
+	}
+}
+.pink-text {
+	color: $pink-text;
+	font-weight: bold;	
+}
+.blue-text {
+	color: $blue-text;
+	font-weight: bold;	
+}
+.red-text {
+	color: $red-text;
+	font-weight: bold;	
+}
+.underline {
+	text-decoration: underline;
+}
+.black {
+	color: $black !important;
+}
+.light-blue-text {
+	color: $blue-bg !important;
+}
+.regular {
+	font-weight: normal !important;
+}
+.bold {
+	font-weight: bold !important;
 }
