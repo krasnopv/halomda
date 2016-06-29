@@ -61,6 +61,7 @@ header {
 			    border: none;
 			    height: 202px;
 			    width: auto;
+			    min-width: 135px;
 			    &.js-dropdown-active {
 					display: flex;
 					//width: 1200px;
@@ -272,12 +273,12 @@ header {
 		}
 		li {
 			&.slide1 {
-			    background: url(../img/slide1.jpg) no-repeat;
+			    background: url(../img/orbit/slide1.jpg) no-repeat;
 	    		background-size: auto 35rem ;
 	    		background-position: center;
 	    	}
 	    	&.slide2 {
-			    background: url(../img/slide2.jpg) no-repeat;
+			    background: url(../img/orbit/slide2.jpg) no-repeat;
 	    		background-size: auto 35rem ;
 	    		background-position: center;
 	    	}

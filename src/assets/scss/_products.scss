@@ -1,3 +1,22 @@
+.context {
+	font-size: 18px;
+	h6 {
+		margin-top: 2rem;
+		margin-bottom: 0;		
+	}
+	.pink-text {
+		color: $pink-text;
+		font-weight: bold;	
+	}
+	.blue-text {
+		color: $blue-text;
+		font-weight: bold;	
+	}
+	.red-text {
+		color: $red-text;
+		font-weight: bold;	
+	}
+}
 .tabs {
 	border: none !important;
 	.tabs-title {
