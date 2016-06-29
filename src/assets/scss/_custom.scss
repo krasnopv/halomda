@@ -59,7 +59,7 @@ header {
 			.is-dropdown-submenu {
 			    background: $light-gray;
 			    border: none;
-			    height: 155px;
+			    height: 202px;
 			    width: auto;
 			    &.js-dropdown-active {
 					display: flex;
@@ -70,7 +70,7 @@ header {
 					&.is-dropdown-submenu-item {
 						width: 126px;
 						min-width: 106px;
-						padding: 0 0rem 0.5rem;
+						padding: 1.5rem 0.5rem;
 						&:nth-child(n+2) {
 							-webkit-animation-name: card-left2; /* Chrome, Safari, Opera */
 						    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
@@ -81,12 +81,17 @@ header {
 						}
 						a {
 							img {
-								-moz-transform: scale(0.8);
-								-webkit-transform: scale(0.8);
-								transform: scale(0.8);
-								-ms-transform: scale(0.8,0.8);
+								/*filter: none; 
+								-webkit-filter: blur(0px); 
+								-moz-filter: blur(0px); 
+								-ms-filter: blur(0px);
+								filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+								-moz-transform: scale(1,1);
+								-webkit-transform: scale(1,1);
+								transform: scale(1,1);
+								-ms-transform: scale(1,1);
 								/*height: 136px;
-								width: auto;*/
+								width: auto;*
 								margin: 0;
 								-moz-transition: all 0.3s;
 								-webkit-transition: all 0.3s;
@@ -96,13 +101,18 @@ header {
 							    -webkit-animation-fill-mode: forwards;
 							    animation-name: card-size2;
 							    animation-duration: 0.5s;
-								animation-fill-mode: forwards;*/
+								animation-fill-mode: forwards;*
 								&:hover {
-									-moz-transform: scale(1);
-									-webkit-transform: scale(1);
-									transform: scale(1);
-									-ms-transform: scale(1,1);
-								}
+									filter: none; 
+									-webkit-filter: blur(0px); 
+									-moz-filter: blur(0px); 
+									-ms-filter: blur(0px);
+									filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+									-moz-transform: scale(1.3,1.3);
+									-webkit-transform: scale(1.3,1.3);
+									transform: scale(1.3,1.3);
+									-ms-transform: scale(1.3,1.3);
+								}*/
 							}
 							&:hover {
 								background: transparent !important;
@@ -130,6 +140,16 @@ header {
 	    			}
 	    		}
 				&.is-dropdown-submenu-item {
+					-moz-transition: all 0.3s;
+							-webkit-transition: all 0.3s;
+							transition: all 0.3s;
+					&:hover {
+								
+								-moz-transform: scale(1.3,1.3);
+							  	-webkit-transform: scale(1.3,1.3);
+							  	transform: scale(1.3,1.3);
+							  	-ms-transform: scale(1.3,1.3);
+							}
 					a {
 						background: transparent;
 						padding: 0 !important;
@@ -146,12 +166,17 @@ header {
 						    animation-name: card-size2;
 						    animation-duration: 0.5s;
 							animation-fill-mode: forwards;*/
-							&:hover {
-								-moz-transform: scale(1.3);
-							  	-webkit-transform: scale(1.3);
-							  	transform: scale(1.3);
+							/*&:hover {
+								filter: none; 
+								-webkit-filter: blur(0px); 
+								-moz-filter: blur(0px); 
+								-ms-filter: blur(0px);
+								filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+								-moz-transform: scale(1.3,1.3);
+							  	-webkit-transform: scale(1.3,1.3);
+							  	transform: scale(1.3,1.3);
 							  	-ms-transform: scale(1.3,1.3);
-							}
+							}*/
 						}
 					}
 				}
