@@ -1,6 +1,6 @@
 .platforma-top-context {
-	margin-bottom: 5.625rem;
-	border-bottom: 4px solid $border-gray;
+	//margin-bottom: 5.625rem;
+	//border-bottom: 4px solid $border-gray;
 	padding-bottom: 4.5rem;
 	.context {
 		font-size: 18px;
@@ -17,87 +17,36 @@
 				color: $pink-text;
 				font-weight: bold;
 			}
-			/*h6 {
-				margin-top: 2rem;
-				margin-bottom: 0;		
-			}*/
 		}
 	}
 }
-.tabs {
-	border: none !important;
-	.tabs-title {
-		min-height: 5.5rem;
-		border: 1px solid $border-gray;
-		border-left-width: 2px;
-		border-bottom: 2px solid $blue;
-		width: 32.889322% !important;
-		padding: 0;
-		a {
-			font-size: 1.5rem;
-			text-align: center;
-			color: $black;
-			background-color: $white-gray;
-			&.tab-middle {
-				padding: 2rem 0;
-			}
-		}
-		&.is-active {
-			border: 2px solid $blue;
-			border-bottom: 2px solid $white;
-			a {
-				color: $blue;
-				font-weight: bold;
-				background-color: $white;
-				border-bottom: none !important;
-			}
-		}
-	}
-	.center-tab {
-		margin: 0 0.5rem;
-	}
-}
-.tabs-content {
-	border-top: 2px solid $blue !important;
+.platforma-content {
 	border-bottom: none !important;
-	margin-top: -3px;
-	font-size: 18px;
-	.tabs-panel {
-		padding: 0;
-		border: 0;
+	.content-header {
+		font-size: 2.25rem;
+		color: $blue-bg;
+		padding: 1.5rem 0;
+	}
+	.platforma-container {
+		border-top: 4px solid $border-gray;
+		padding: 2.5rem 0;
+	}
+	.numeric {
+		display: inline-flex;
+	}
+	.platforma-pic {
+		text-align: center;
+		padding-top: 2.5rem;
 	}
 	.column {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	.tabs-header {
+	.container-header {
 		font-size: 1.5rem;
 		color: $pink-text;
 		font-weight: bold;
-	}
-	.tabs-hours {
-		color: $blue-bg;
-		font-weight: bold;
-		margin-bottom: 0 !important;
-		img {
-			margin-top: -3px;
-		}
-	}
-	.tabs-paragraph {
-		margin-right: 2.5rem !important;
-	}
-	#tabs-container1 {
-		.tabs-text {
-			//padding-top: 2.25rem;
-		}
-	}
-	#tabs-container17 {
-	    background: url('../img/platforma-1-7.png') no-repeat;
-	    background-position: center left;
-	    min-height: 24.5rem;
-	}
-	.tabs-container {
-		padding: 3rem 0 2rem;
+		margin-left: 0.5rem;
 	}
 	.squared {
 		background: url('../img/squared-bg.png') $white-gray;		
@@ -107,41 +56,4 @@
 		background: $white;		
 		//min-height: 384px;
 	}
-	#panel1, #panel2, #panel3 {
-		margin-top: 1.25rem;
-	}
-	.tabs-banner {
-		background: $blue-bg;
-		font-size: 2.25rem;
-		color: $white;
-		text-align: center;
-		padding: 2rem 0;
-	}
-}
-.pink-text {
-	color: $pink-text;
-	font-weight: bold;	
-}
-.blue-text {
-	color: $blue-text;
-	font-weight: bold;	
-}
-.red-text {
-	color: $red-text;
-	font-weight: bold;	
-}
-.underline {
-	text-decoration: underline;
-}
-.black {
-	color: $black !important;
-}
-.light-blue-text {
-	color: $blue-bg !important;
-}
-.regular {
-	font-weight: normal !important;
-}
-.bold {
-	font-weight: bold !important;
 }
