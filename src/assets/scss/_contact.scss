@@ -1,0 +1,28 @@
+.form-container {
+	padding: 1.5rem 2rem 2.75rem;
+	background: $light-gray;
+	margin-top: 2.25rem;
+	margin-bottom: 4rem;
+	.column {
+		//padding: 0;
+	}
+	h6 {
+		color: $blue-text;
+		font-weight: bold;
+		padding-right: 0.9375rem;
+	}
+	p {
+		font-size: 18px;
+	}
+	.required-star {
+		color: map-get($foundation-palette, alert);
+		position: absolute;
+		margin-right: -1rem;
+    	margin-top: 0.5rem;
+	}
+	textarea {
+		margin: 0px 0px 16px !important; 
+		width: 572px !important; 
+		height: 204px !important;
+	}
+}
