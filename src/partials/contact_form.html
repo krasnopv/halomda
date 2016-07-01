@@ -14,15 +14,15 @@
 		<form data-abide="ajax" id="myform">
 			<div class="row">
 				<div class="column large-8">
-					<textarea placeholder="תוכן הפנייה:"></textarea>
-					<strong><button class="button" style="float: left; box-shadow: 0px 4px 0 #3c6a82;" type="submit">שלח</button></strong>
+					<textarea name="message" placeholder="תוכן הפנייה:"></textarea>
+					<strong><button class="button" style="float: left; box-shadow: 0px 4px 0 #3c6a82;" type="submit" action="submitform.php">שלח</button></strong>
 				</div>
 				<div class="column large-4">
-					<input type="text" pattern="[a-zA-Z]+" placeholder="שם">
-					<input type="text" pattern="[a-zA-Z]+"placeholder="שם משפחה">
+					<input name="first_name" type="text" pattern="[a-zA-Z]+" placeholder="שם">
+					<input name="last_name" type="text" pattern="[a-zA-Z]+"placeholder="שם משפחה">
 					<div class="required-star">*</div>
-					<input type="email" required placeholder="כתובת דואר אלקטרוני">
-					<input type="text" placeholder="מספר טלפון">
+					<input  name="email" type="email" required placeholder="כתובת דואר אלקטרוני">
+					<input name="phone" type="text" placeholder="מספר טלפון">
 				</div>
 			</div>
 		</form>
