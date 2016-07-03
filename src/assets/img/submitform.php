@@ -10,5 +10,5 @@
   $message = "From: $firstname $surname \nEmail: $email \nPhone: $phone \nMessage: $text \n";
 
   $sent = mail($to, $subject, $message);
-  header('Location: contact.html');
+  header('Location: ../../contact.html');
 ?>
