@@ -23,8 +23,12 @@
 			text-align: center;
 			color: $black;
 			background-color: $white-gray;
+    		padding: 0.5rem;
 			&.tab-middle {
 				padding: 2rem 0;
+			}
+			&.tab-middle2 {
+				padding: 1.25rem 0;
 			}
 		}
 		&.is-active {

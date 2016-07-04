@@ -22,11 +22,6 @@
 }
 .platforma-content {
 	border-bottom: none !important;
-	.content-header {
-		font-size: 2.25rem;
-		color: $blue-bg;
-		padding: 1.5rem 0;
-	}
 	.platforma-container {
 		border-top: 4px solid $border-gray;
 		padding: 2.5rem 0;
@@ -57,3 +52,9 @@
 		//min-height: 384px;
 	}
 }
+
+.content-header {
+		font-size: 2.25rem;
+		color: $blue-bg;
+		padding: 1.5rem 0;
+	}
